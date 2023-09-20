@@ -2,6 +2,9 @@
 
 body{
     text-align: center;
+    margin: auto;
+    border: solid black 5px;
+    width: 70%;
     font-family: 'Mooli';
     display:grid;
     grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr;
@@ -25,7 +28,6 @@ header img{
 
 nav{
     background-color: black;
-    padding: 20px;
     font-size: 25px;
     line-height: 4pc;
 }
@@ -35,6 +37,10 @@ a{
 }
 .card{
     border: 2px solid black;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
 }
 
 h3{
@@ -45,4 +51,5 @@ h3{
 footer{
     background-color: darkslateblue;
     color: white;
+    margin-top: 30px;
 }
