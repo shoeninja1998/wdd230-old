@@ -1,0 +1,16 @@
+@media (min-width: 700px) {
+    nav ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    main{
+        display:flex;
+    }
+    .info{
+        width: 40%;
+    }
+    .card{
+        width: 60%;
+        
+    }
+}
