@@ -29,27 +29,48 @@ header img{
 
 nav{
     background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+nav li{
     font-size: 1rem;
-    line-height: 4rem;
+    padding: 5%;
+}
+
+#nav-menu{
+    list-style-type: none;
+    align-items: center;
+}
+
+#nav-menu li a{
+    height: 5rem;
 }
 
 #nav-menu li a:hover, .active{
     text-decoration: none;
-    background-color: gray;
 }
 
 .active{
-    padding: 3rem;
+    padding: 2rem;
 }
 
-a{
+#learning-activities li a{
+    color:black;
+}
+
+#learning-activities li a:hover{
+    color: blue;
+}
+
+li a{
     text-decoration: none;
     color:white;
 }
-
 .card, .info{
     border: 0.1rem solid black;
     margin: 1rem;
+    color: black;
 
 }
 
