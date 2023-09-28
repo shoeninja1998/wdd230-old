@@ -13,4 +13,11 @@
         width: 60%;
         
     }
+    .menu-show, .menu-hide, .menu-show.showing, .menu-hide.showing{
+        display: none;
+    }
+    #nav-menu{
+        display: flex;
+    }
+    
 }

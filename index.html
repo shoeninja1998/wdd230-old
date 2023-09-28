@@ -15,7 +15,7 @@
     <title>Course Assignment Portal</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="styles/bass.css">
+    <link rel="stylesheet" href="styles/base.css">
     <script src="scripts/getdates.js"></script>
     <link rel="icon" href="images/opt_bradley.jpg">
 </head>
@@ -25,8 +25,9 @@
     <p>Bradley Rennick</p>
 </header>
 <nav>
-    <ul>
-        <li><a href="#">Home</a></li>
+    <button class="menu-hide">X</button><button class="menu-show showing">&equiv;</button>
+    <ul id="nav-menu">
+        <li><a class="active" href="#">Home</a></li>
         <li><a href="chamber/siteplan.html">Site Plan</a></li>
         <li><a href="chamber/">Chamber</a></li>
         <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
@@ -74,8 +75,8 @@
         <h3>Information</h3>
         <p>Page visits: </p>
     </section>
-
 </main>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d198096.44117577633!2d-94.91323625320899!3d39.12338528730284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c08ce427cf3515%3A0xdc77777b70c31e05!2sKansas%20City%2C%20KS!5e0!3m2!1sen!2sus!4v1695764797176!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <footer>
         <p>©<span id="currentYear"></span> Bradley Rennick, United States</p>
         <p>Last Modified: <span id="lastModified"></span></p>

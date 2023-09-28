@@ -32,6 +32,16 @@ nav{
     font-size: 1rem;
     line-height: 4rem;
 }
+
+#nav-menu li a:hover, .active{
+    text-decoration: none;
+    background-color: gray;
+}
+
+.active{
+    padding: 3rem;
+}
+
 a{
     text-decoration: none;
     color:white;
@@ -46,4 +56,13 @@ a{
 footer{
     margin-top: 1rem;
     padding: 0.1rem;
+}
+
+/** Hamburger Menu **/
+
+.menu-hide, .menu-show{
+    display: none;
+}
+.menu-hide.showing, .menu-show.showing{
+    display: block;
 }
