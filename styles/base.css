@@ -9,6 +9,13 @@ body{
     font-family: 'Mooli';
 }
 
+
+/* Pseudoelement */
+
+header p::first-letter{
+    font-size: 4rem;
+}
+
 /* Header */
 
 header, h3, footer{
@@ -24,7 +31,7 @@ header {
     justify-content: center;
     font-size: 3rem;
     }
-
+ 
 header img{
     margin-right: 1rem;
     width: 8rem;
@@ -33,8 +40,6 @@ header img{
 
 
 /* Menu */
-
-/* small view navigation */
 #menu {
 	font-size: 1.5rem;
 	border: 1px solid rgba(0,0,0,.3);
@@ -48,10 +53,22 @@ header img{
 }
 
 #menu.open::before {
-	content: "❎";
+	content: "X";
 }
 
 .show li {
+	display: block;
+}
+
+ul.navigation.open{
+    padding: 0%;
+}
+
+.open li {
+	display: block;
+	width: 100%;
+}
+.open li a {
 	display: block;
 }
 
@@ -85,19 +102,6 @@ nav{
 }
 .active{
     padding: 2rem;
-}
-
-ul.navigation.open{
-    padding: 0%;
-}
-
-/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
-.open li {
-	display: block;
-	width: 100%;
-}
-.open li a {
-	display: block;
 }
 
 /* Cards */
