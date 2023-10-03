@@ -1,0 +1,16 @@
+#desktop{
+    width: 20rem;
+}
+#mobile{
+    height: 20rem;
+}
+
+header{
+    background-color: aquamarine;
+}
+
+p{
+    background-color: rgb(193, 213, 255);
+    font-family: 'Gabarito', cursive;
+    font-family: 'Mooli', sans-serif;
+}
