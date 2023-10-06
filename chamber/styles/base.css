@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* Displaying the font */
+nav a, .card{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+header{
+    background-color: aquamarine;
+    padding: 2rem;
+}
+
+header h1, footer h1{
+    margin:0%;
+    text-align: left;
+}
+
+/* Nav */
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(70, 70, 70);
+}
+
+nav a{
+    padding: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+}
+
+#active, nav a:hover{
+    background-color: lightgray;
+    color: black
+}
+
+/* Hero image */
+
+#hero{
+    width: 15rem;
+}
+
+h1{
+    text-align: center;
+}
+
+/* Card */
+.card{
+    border: 1px solid grey;
+    background-color: lightgrey;
+    padding: 1rem;
+    margin: 1rem;
+    
+    
+}
+
+.card h2{
+    border-bottom: 1px solid black;
+}
+
+/* Footer */
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 3rem;
+}
