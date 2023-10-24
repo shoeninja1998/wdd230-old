@@ -60,19 +60,14 @@ header img{
 	content: "X";
 }
 
-.show li {
-	display: block;
-}
-
 ul.navigation.open{
     padding: 0%;
 }
 
 .open li {
-	display: block;
 	width: 100%;
 }
-.open li a {
+.show li, .open li, .open li a {
 	display: block;
 }
 
@@ -82,18 +77,12 @@ nav{
     background-color: black;
 }
 
-.navigation{
+.navigation, .navigation li{
     display: none;
 }
 
 .navigation.open {
     display: flex;
-}
-
-
-.navigation li {
-	display: none;
-    text-decoration: none;
 }
 
 .navigation li a{
