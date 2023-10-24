@@ -17,20 +17,21 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="icon" href="images/chamber_of_commerce_logo.png">
-
+    <link rel="icon" href="images/chamber_of_commerce_logo.webp">
+    <script src="scripts/windchill.js"></script>
 </head>
 <body>
     <header>
         <h1>Miikwasouski Chamber of Commerce</h1>
+        <nav>
+            <a id="active" href="">Home</a>
+            <a href="">Discover</a>
+            <a href="">Directory</a>
+            <a href="">Join</a>
+        </nav>
+    <button id="darkmode">DARK</button>
     </header>
-    <nav>
-        <a id="active" href="">Home</a>
-        <a href="">Discover</a>
-        <a href="">Directory</a>
-        <a href="">Join</a>
-    </nav>
-    <img id="hero" src="images/opt_bradley.jpg">
+    <img id="hero" src="images/wdd230-org-600.webp">
     
 
         <section class="card">
@@ -40,9 +41,8 @@
 
         <section class="card">
             <h2>Weather</h2>
-            <p><span id="temperature"></span></p>
-            <p><span id="clouds"></span></p>
-            <p>Humidity: <span id="humidity"></span></p>
+            <p>Temperature: <span id="temperature"></span>°F</p>
+            <p>Wind Speed: <span id="wind-speed"></span>m/s</p>
             <p>Wind Chill: <span id="wind-chill"></span></p>
         </section>
 
@@ -66,4 +66,5 @@
     </footer>
     
 </body>
+<script src="scripts/darkmode.js"></script>
 </html>

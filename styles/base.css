@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
 
+:root{
+    --main-color: black;
+    --second-color: white;
+    --main-background: darkslateblue;
+}
 
 body{
     text-align: center;
@@ -19,10 +24,9 @@ header p::first-letter{
 /* Header */
 
 header, h3, footer{
-    background-color:darkslateblue;
-    color:white;
+    background-color:var(--main-background);
+    color:var(--second-color);
     padding: 1rem;
-    margin-top: 0;
 }
 
 header {
@@ -41,8 +45,8 @@ header img{
 
 /* Menu */
 #menu {
-	font-size: 1.5rem;
-	border: 1px solid rgba(0,0,0,.3);
+	font-size: 1rem;
+	border: 1px solid rgba(0,0,0);
 	padding: 3px 7px 6px;
 	background-color: #eee;
 	color: #000;
@@ -78,11 +82,14 @@ nav{
     background-color: black;
 }
 
-.navigation {
-	list-style: none;
-	margin: 0 auto;
-	max-width: 760px;
+.navigation{
+    display: none;
 }
+
+.navigation.open {
+    display: flex;
+}
+
 
 .navigation li {
 	display: none;
@@ -92,7 +99,6 @@ nav{
 .navigation li a{
     display: block;
     padding: 1rem;
-    text-align: center;
     text-decoration: none;
     color: white;
 }
@@ -103,6 +109,16 @@ nav{
 .active{
     padding: 2rem;
 }
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+main img{
+    grid-column: 1/3;
+    width:100%;
+}
 
 /* Cards */
 
@@ -112,8 +128,9 @@ nav{
 
 .card, .info{
     border: 0.1rem solid black;
-    margin: 1rem;
+    width: 90%;
     color: black;
+    
 }
 
 footer{
@@ -123,10 +140,11 @@ footer{
 
 
 @media only screen and (min-width: 40em) {
-	.navigation {
-		display: flex;
-	}
-	.navigation li {
+	.navigation{
+        display:flex;
+        align-items: space-between;
+    }
+    .navigation li {
 		display: block;
 		flex: 1 1 100%;
 	}
