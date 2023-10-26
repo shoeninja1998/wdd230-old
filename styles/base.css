@@ -9,8 +9,6 @@
 body{
     text-align: center;
     margin: auto;
-    border: solid black 5px;
-    width: 70%;
     font-family: 'Mooli';
 }
 
@@ -22,6 +20,7 @@ header p::first-letter{
 }
 
 /* Header */
+
 
 header, h3, footer{
     background-color:var(--main-background);
@@ -42,14 +41,18 @@ header img{
     border: 0.2rem solid black;
 }
 
+h3{
+    margin-top: 0;
+}
+
 
 /* Menu */
 #menu {
 	font-size: 1rem;
 	border: 1px solid rgba(0,0,0);
 	padding: 3px 7px 6px;
-	background-color: #eee;
-	color: #000;
+	background-color: var(--second-color);
+	color: var(--main-color);
 }
 
 #menu::before {
@@ -58,10 +61,6 @@ header img{
 
 #menu.open::before {
 	content: "X";
-}
-
-ul.navigation.open{
-    padding: 0%;
 }
 
 .open li {
@@ -74,11 +73,12 @@ ul.navigation.open{
 /* Navigation */
 
 nav{
-    background-color: black;
+    background-color: var(--main-color);
 }
 
 .navigation, .navigation li{
     display: none;
+    margin-top: 0;
 }
 
 .navigation.open {
@@ -89,19 +89,25 @@ nav{
     display: block;
     padding: 1rem;
     text-decoration: none;
-    color: white;
+    color: var(--second-color);
 }
 
 .navigation li a:hover, .active{
     background-color: gray;
 }
+
+ul.navigation.open{
+    padding: 0%;
+}
+
 .active{
     padding: 2rem;
 }
 main{
+    width: 70%;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: center;
 }
 
 main img{
@@ -116,9 +122,10 @@ main img{
 }
 
 .card, .info{
+    color: var(--main-color);
     border: 0.1rem solid black;
+    margin: 1rem;
     width: 90%;
-    color: black;
     
 }
 
