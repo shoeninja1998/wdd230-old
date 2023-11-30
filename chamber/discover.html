@@ -3,16 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miikwasouski Chamber of Commerce</title>
+    <title>Disover - MSCC</title>
     <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/discover.js" defer></script>
 </head>
 <body>
+    <header>
+        <img src="images/chamber_of_commerce_logo.webp" alt="logo">
+        <h1>Miikwasouski Chamber of Commerce</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a id="active">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+        </nav>
+    </header>
     <main id="discover-main">
+        
         <div id="discover-sidebar">
-
+            <section class="card">
+                <span id="last-visit"></span>
+            </section>
+            <section class="card">
+                <h1>Demographics</h1>
+                <p>Households: 400</p>
+                <p>Median Age: 35.2</p>
+                <p>Median Income: $38213</p>
+                <p>Population (2020): 1359</p>
+            </section>
+            <section class="card">
+                <h1>Local Events</h1>
+                <ul>
+                    <li>12/13/23 @ 6:00pm: Jazz Music at the Lounge</li>
+                    <li>12/15/23 @ 12:00pm: Art Exhibition</li>
+                    <li>12/20/23 @ 7:00pm: Christmas Movie Viewing!</li>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Consectetur iusto debitis quidem corrupti expedita sapiente, 
+                        est commodi, omnis ipsa ex saepe fugit architecto repudiandae esse itaque reprehenderit. 
+                        Vel, architecto eligendi?</li>
+                </ul>
+            </section>
         </div>
-        <div id="discover_images">
-            
+        <div id="discover-images">
+            <picture>
+                <img src="images/city_1.webp" loading="lazy" height="300px">
+            </picture>
+            <picture>
+                <img src="images/city_2.webp" loading="lazy" height="300px">
+            </picture>
+            <picture>
+                <img src="images/city_3.webp" loading="lazy" height="300px">
+            </picture>
+            <picture>
+                <img src="images/city_4.webp" loading="lazy" height="300px">
+            </picture>
+            <picture>
+                <img src="images/city_5.webp" loading="lazy" height="300px">
+            </picture>
+            <picture>
+                <img src="images/city_6.webp" loading="lazy" height="300px">
+            </picture>
         </div>
     </main>
 </body>

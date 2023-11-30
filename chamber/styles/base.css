@@ -1,17 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 /* Displaying the font */
-nav a, .card, #darkmode{
+ul li, label, nav a, .card, #darkmode{
     font-family: 'Poppins', sans-serif;
+}
+:root{
+    --headerBG: rgb(130, 255, 200);
+    --navBG: rgb(70, 70, 70);
+    --mainBG: rgb(50, 100, 170);
 }
 
 /* Header */
 header{
-    background-color: #7fffd4;
+    background-color: var(--headerBG);
     justify-content: space-between;
     display:flex;
 }
 
-header h1, footer h1{
+header h1, footer h1, h1{
     margin: 2rem;
     text-align: left;
 }
@@ -24,7 +29,7 @@ header img{
 /* Nav */
 nav{
     display: flex;
-    background-color: rgb(70, 70, 70);
+    background-color: var(--navBG)
 }
 
 nav a{
@@ -48,7 +53,7 @@ nav a{
 }
 
 #darkmode:hover{
-    background-color: #808080;
+    background-color: var(--navBG);
 }
 
 /* Hero image */
@@ -66,10 +71,9 @@ h1{
 /* Card */
 .card{
     border: 1px solid grey;
-    background-color: #d3d3d3;
+    background-color: lightgray;
     padding: 1rem;
-    margin: 1rem;
-    
+    margin: 2rem;
     
 }
 
@@ -83,4 +87,174 @@ footer{
     background-color: black;
     color: white;
     padding: 3rem;
+}
+
+/* Discover Page */
+
+#last-visit{
+    font-size: 2rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+#discover-images{
+    text-align: center;
+    align-items: center;
+}
+
+#discover-images img{
+    margin: 1rem;
+    border: 0.5rem solid white;
+}
+
+#discover-main{
+    width:80%;
+    margin: auto;
+    background-color: var(--mainBG);
+}
+
+/* Join Page */
+
+#join-form, #benefits{
+    margin: 1rem;
+} 
+
+#input-text input, textarea{
+    width: 20rem;
+}
+
+#join-main fieldset{
+    padding: 1rem;
+    height:50rem;
+    background-color: #eee;
+}
+
+#join-main input, textarea{
+    padding: 0.5rem;
+}
+
+.myinput, .myradio{
+    display: block;
+    padding-top: 1rem;
+}
+
+#membership{
+    margin-bottom:0;
+}
+
+#description{
+    margin-top: 1rem;
+}
+
+/* Directory Page */
+
+.menu {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #bed;
+	text-align: center;
+}
+
+.menu button {
+	padding: 1rem;
+	font-weight: 700;
+}
+
+.grid section {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: lightgrey;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 5px;
+	align-items: center;
+}
+
+.grid section {
+	text-align: center;
+}
+
+.grid img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+}
+
+.grid section > * {
+	margin: 0.1rem;
+}
+
+.grid h3 {
+	font-family: "Caveat", cursive;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none; /* smaller viewports only */
+}
+
+.list section h3 {
+	font-size: 1rem;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+.list section:nth-child(even) {
+	background-color: #bed;
+}
+
+section h3 {
+	font-size: 1.5rem;
+}
+
+section p {
+	font-weight: 600;
+	font-size: smaller;
+}
+
+section a {
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 0.85rem;
+	color: navy;
+	letter-spacing: 1.1pt;
+}
+
+.grid img {
+	height: 75px;
+	max-width: 100%; /* Images are jerks - Seattle*/
+}
+
+
+@media (min-width: 60rem){
+    #discover-main{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    #discover-sidebar, #join-form{
+        grid-column: 1/2;
+    }
+    #discover-images, #benefits{
+        grid-column: 2/3;
+    }
+    #join-main{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    }
 }

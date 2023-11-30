@@ -1,0 +1,30 @@
+{"moveIns":
+    {
+        "name": "Briggs",
+        "moveInDate": "2022/08/01",
+        "familySize": 4,
+        "visited": true,
+        "Members": [
+            {
+                "name":"Brenden",
+                "gender":"M",
+                "birthdate": "1998/12/15"
+            },
+            {
+                "name": "Bradley",
+                "gender": "M",
+                "birthdate":  "2004/08/08"
+            },
+            {
+                "name": "Brigitte",
+                "gender": "F",
+                "birthdate": "1968/02/15"
+            },
+            {
+                "name": "Sharon",
+                "gender": "F",
+                "birthdate": "1962/05/23"
+            }
+        ]
+    }
+}

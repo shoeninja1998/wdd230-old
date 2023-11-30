@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join - MSCC</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/chamber_of_commerce_logo.webp" alt="logo">
+        <h1>Miikwasouski Chamber of Commerce</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a id="active">Join</a>
+        </nav>
+    </header>
+    <main id="join-main">
+        <section id="join-form">
+            <form>
+            <fieldset>
+                <section id="input-text">
+                    <label class="myinput">First Name*<br><input name="fname" type="text" required></label>
+                    <label class="myinput">Last Name*<br><input name="lname" type="text" required></label>
+                    <label class="myinput">Title/Position*<br><input name="title" type="text" required pattern="[A-Za-z\s\-]{7,}"></label>
+                    <label class="myinput">Email*<br><input name="email" type="email" required placeholder="example@email.com" title="Please enter a valid email address"></label>
+                    <label class="myinput">Cell Phone*<br><input name="phone" type="tel" required pattern></label>
+                    <label class="myinput">Business Name*<br><input name="business-name"type="text"></label>
+                </section>
+                <h2 id="membership">Membership Level</h2>
+                <label class="myradio"><input type="radio" name="level" value="nonprofit"> Non-Profit</label>
+                <label class="myradio"><input type="radio" name="level" value="bronze"> Bronze</label>
+                <label class="myradio"><input type="radio" name="level" value="silver"> Silver</label>
+                <label class="myradio"><input type="radio" name="level" value="gold"> Gold</label>
+                <section id="description">
+                    <label class="input">Business Description</label><br>
+                    <textarea name="description"></textarea><br>
+                    <label id="timestamp" type="hidden" name="timestamp" value=""></label>
+                    <button type="submit" onclick="">Join The MSCC!</button>
+                </section>
+            </fieldset>
+            </form>
+        </section>
+
+        <section id="benefits">
+        <fieldset>
+            <h1>Membership Levels Benefits</h1>
+            <h2>Non-Profit Membership</h2>
+                <ul>
+                    <li>For Non-Profit Organizations; No fee is necessary</li>
+                </ul>
+            <h2>Bronze Membership</h2>
+                <ul>
+                    <li>15% discount on events</li>
+                    <li>10% discount on advertising</li>
+                    <li>Fee of $50/month</li>
+                </ul>
+            <h2>Silver Membership</h2>
+                <ul>
+                    <li>25% discount on events</li>
+                    <li>15% discount on advertising</li>
+                    <li>Free participation in the trade fair</li>
+                    <li>Fee of $100/month</li>
+                </ul>
+            <h2>Gold Membership</h2>
+                <ul>
+                    <li>50% discount on events</li>
+                    <li>50% discount on advertising</li>
+                    <li>Free participation in the trade fair</li>
+                    <li>5 free featured ads per year</li>
+                    <li>1 free training per quarter</li>
+                    <li>Fee of $250/month</li>
+                </ul>
+        </fieldset>
+        </section>
+    </main>
+</body>
+</html>

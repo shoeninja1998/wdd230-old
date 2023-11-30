@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bradley Rennick">
+    <meta name="description" content="WDD 230 - Web Frontend Development - Bradley Rennick -  course assignment portal">
+
+    <meta property="og:url"                content="https://github.com/shoeninja1998/wdd230/blob/main/html/index.html">
+    <meta property="og:type"               content="website">
+    <meta property="og:title"              content="Brad Rennick - WDD 230 - Web Frontend Development">
+    <meta property="og:description"        content="Brad Rennick course assignment portal">
+    <meta property="og:image"              content="images/opt_bradley.jpg">
+
+    <title>Course Assignment Portal</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/form.css">
+    
+    <!-- JavaScript -->
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/hamburger-menu.js" defer></script>
+    <script src="scripts/pagevisits.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+
+    <link rel="icon" href="images/opt_bradley.jpg">
+    
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&family=Mooli&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    
+    <img src="images/opt_bradley.jpg" alt="picture of me">
+    <p>Bradley Rennick</p>
+</header>
+<nav>
+    <button id="menu" class="menu-toggle"></button>
+    <ul class="navigation">
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="chamber/index.html">Site Plan</a></li>
+        <li><a href="chamber/">Chamber</a></li>
+        <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
+        <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/john/15?lang=eng&id=p18#p18" target="_blank">Scripture</a></li>
+    </ul>
+</nav>
+<main id="form-main">
+    <form>
+        <!-- Fieldset is what groups everything into a box. -->
+    <fieldset>
+        <p><span id="message"></span></p>
+        <!-- The name is needed to submit data to the internet. Otherwise, it gets lost. 
+            All the id does is make it targetable for CSS and JS. -->
+        <label>Username: <input id="username" name="username" type="text" required></label>
+        <!-- the pattern section: \d means digits are allowed, \w means words are allowed.
+            {8,} means that the password will only be accepted if there are 8 or more characters.
+            The [] determines what type of characters can be used.
+            []? = 0 or 1 characters, []* = 0 or more, []{} is a set range
+            To specify the exact required text, you can add text after the brackets (e.g. Foo$)
+            THIS IS CALLED A REGULAR EXPR ESSION.-->
+        <label>Password: <input id="password" name="password" type="password" required pattern="[\d|\w]{8,}"></label>
+        <label>Confirm Password: <input id="confirm" name="confirm" type="password" required></label>
+        <!-- Title lets you display text when you hover over an item for long enough. -->
+        <label>Email: <input id="email" name="email" type="email" required pattern="[\w\.]+@byui\.edu$" placeholder="Email" title="Please enter a valid email address"></label>
+        <!-- Notice the type "range". You need to have the min, max, and step. 
+            The step determines how much the range increases by (e.g. It will increase by 1).
+            The value determines the starting number for the range.-->
+        <label>Page Rating: <span id="currentrating"></span><input id="rating" name="rating" type="range" min="1" max="10" step="1" value="1" list="slidervalues"></label>
+        <datalist id="slidervalues">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </datalist>
+        <button>Sign up, baby!</button>
+    </fieldset>
+    </form>
+</main>
+<footer>
+    <p>©<span id="currentYear"></span> Bradley Rennick, United States</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+</footer>
+</body>
+</html>
