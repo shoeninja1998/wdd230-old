@@ -6,7 +6,7 @@ ul li, label, nav a, .card, #darkmode{
 :root{
     --headerBG: rgb(130, 255, 200);
     --navBG: rgb(70, 70, 70);
-    --mainBG: rgb(50, 100, 170);
+    --mainBG: rgb(150, 150, 250);
 }
 
 /* Header */
@@ -112,6 +112,22 @@ footer{
     margin: auto;
     background-color: var(--mainBG);
 }
+#displayButtons{
+    display: flex;
+    justify-content: center;
+}
+
+#displayButtons button{
+    border: 0.2rem solid black;
+    margin:1rem;
+    line-height: 4rem;
+    font-size: 100%;
+}
+
+.inactive{
+    background-color: var(--navBG);
+    color: white;
+}
 
 /* Join Page */
 
@@ -126,7 +142,7 @@ footer{
 #join-main fieldset{
     padding: 1rem;
     height:50rem;
-    background-color: #eee;
+    background-color: var(--mainBG);
 }
 
 #join-main input, textarea{

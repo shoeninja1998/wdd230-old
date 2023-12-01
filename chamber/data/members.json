@@ -1,12 +1,60 @@
-{"members":{
-    "name":"",
+{"members": [{
+    "name":"Quantum Innovations",
     "address":"",
-    "phoneNumber":"",
-    "websiteURL":"",
+    "phoneNumber":"(913) 302-1231",
+    "websiteURL":"quantum.org",
     "imageFile":"",
-    "membershipLevel":"",
-    "":"",
+    "membershipLevel":"Gold"
+},
+{
+    "name":"Boulevard Bistro",
+    "address":"",
+    "phoneNumber":"(913) 120-2414",
+    "websiteURL":"boulevardbistro.com",
+    "imageFile":"",
+    "membershipLevel":"Bronze"
+},
+{
+    "name":"Peak Oasis Fitness",
+    "address":"",
+    "phoneNumber":"(913) 124-8421",
+    "websiteURL":"peakoasis.com",
+    "imageFile":"",
+    "membershipLevel":"Silver"
+},
+{
+    "name":"Johnny Bravo Collective",
+    "address":"",
+    "phoneNumber":"(913) 124-2851",
+    "websiteURL":"bravocollective.org",
+    "imageFile":"",
+    "membershipLevel":"Non-Profit"
+},
+{
+    "name":"Claire Consultants",
+    "address":"",
+    "phoneNumber":"(913) 159-2413",
+    "websiteURL":"consultclaire.com",
+    "imageFile":"",
+    "membershipLevel":"Silver"
+},
+{
+    "name":"Epicurean Delights",
+    "address":"",
+    "phoneNumber":"(913) 782-1942",
+    "websiteURL":"epicurean.com",
+    "imageFile":"",
+    "membershipLevel":"Bronze"
+},
+{
+    "name":"Odyssey Estates",
+    "address":"",
+    "phoneNumber":"(913) 124-0909",
+    "websiteURL":"odyssey.org",
+    "imageFile":"",
+    "membershipLevel":"Gold"
 }
+]
 
 }
 
