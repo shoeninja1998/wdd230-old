@@ -10,11 +10,13 @@ function displayMembers(members){
             // Card HTML format
             let sectionHTML = `
             <img src="${member.imageFile}" alt="${member.name}"></img>
+            <div class=directoryCardText>
             <h2>${member.name}</h2>
             <h3>${member.membershipLevel}</h3>
             <p>${member.address}</p>
             <p>${member.phoneNumber}</p>
-            <a href="${member.websiteURL}">Website</a>`;
+            <a href="${member.websiteURL}">Website</a>
+            </div>`;
         
         // Adds format to the cards
         section.innerHTML = sectionHTML;
@@ -40,7 +42,7 @@ const container = document.querySelector('#members')
 
 gridButton.addEventListener('click', ()=>{
     // Checks if grid is active
-    if(!gridButton.classList.contains('active')){
+    if(gridButton.classList.contains('inactive')){
         
         gridButton.classList.replace('inactive','active')
 
@@ -53,7 +55,7 @@ gridButton.addEventListener('click', ()=>{
 
 listButton.addEventListener('click', () => {
     // Checks if list is active
-    if(!listButton.classList.contains('active')){
+    if(listButton.classList.contains('inactive')){
         
         listButton.classList.replace('inactive','active');
 

@@ -1,57 +1,57 @@
 {"members": [{
     "name":"Quantum Innovations",
-    "address":"",
+    "address":"123 Main St, Miikwasouski, IL 62701",
     "phoneNumber":"(913) 302-1231",
     "websiteURL":"quantum.org",
-    "imageFile":"",
+    "imageFile":"./images/quantum.webp",
     "membershipLevel":"Gold"
 },
 {
     "name":"Boulevard Bistro",
-    "address":"",
+    "address":"567 Oak Avenue, Miikwasouski, IL 62701",
     "phoneNumber":"(913) 120-2414",
     "websiteURL":"boulevardbistro.com",
-    "imageFile":"",
+    "imageFile":"./images/bistro.webp",
     "membershipLevel":"Bronze"
 },
 {
     "name":"Peak Oasis Fitness",
-    "address":"",
+    "address":"890 Pine Lane, Suite 301, Miikwasouski, IL 62701",
     "phoneNumber":"(913) 124-8421",
     "websiteURL":"peakoasis.com",
-    "imageFile":"",
+    "imageFile":"./images/fitness.webp",
     "membershipLevel":"Silver"
 },
 {
     "name":"Johnny Bravo Collective",
-    "address":"",
+    "address":"456 Birch Street, Miikwasouski, IL 62701",
     "phoneNumber":"(913) 124-2851",
     "websiteURL":"bravocollective.org",
-    "imageFile":"",
+    "imageFile":"./images/collective.webp",
     "membershipLevel":"Non-Profit"
 },
 {
     "name":"Claire Consultants",
-    "address":"",
+    "address":"789 Elm Blvd, Miikwasouski, IL 62701",
     "phoneNumber":"(913) 159-2413",
     "websiteURL":"consultclaire.com",
-    "imageFile":"",
+    "imageFile":"./images/consult.webp",
     "membershipLevel":"Silver"
 },
 {
     "name":"Epicurean Delights",
-    "address":"",
+    "address":"234 Cedar Road, Unit 7, Miikwasouski, IL 62701",
     "phoneNumber":"(913) 782-1942",
     "websiteURL":"epicurean.com",
-    "imageFile":"",
+    "imageFile":"./images/epicurean.webp",
     "membershipLevel":"Bronze"
 },
 {
     "name":"Odyssey Estates",
-    "address":"",
+    "address":"901 Spruce Court, Miikwasouski, IL 62701",
     "phoneNumber":"(913) 124-0909",
     "websiteURL":"odyssey.org",
-    "imageFile":"",
+    "imageFile":"./images/estate.webp",
     "membershipLevel":"Gold"
 }
 ]

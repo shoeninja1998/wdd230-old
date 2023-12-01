@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Directory - MSCC</title>
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <script src="scripts/directory.js" defer></script>
     <script src="scripts/darkmode.js" defer></script>
 </head>
 <body>
     <header>
-        <img src="images/chamber_of_commerce_logo.webp" alt="logo">
-        <h1>Miikwasouski Chamber of Commerce</h1>
+        <div id="headerInfo">
+            <img src="images/chamber_of_commerce_logo.webp" alt="logo">
+            <h1>Miikwasouski Chamber of Commerce</h1>
+        </div>
         <nav>
             <a href="index.html">Home</a>
             <a href="discover.html">Discover</a>
@@ -22,12 +25,15 @@
     </header>
     <main id="directory">
         <div id = "displayButtons">
-            <button class="inactive" id="displayGrid">Grid</button>
-            <button class="active" id="displayList">List</button>
+            <button type="button" class="inactive" id="displayGrid">Grid</button>
+            <button type="button" class="active" id="displayList">List</button>
         </div>
             <article id="members" class="list">
             </article>
         </article>
     </main>
+    <footer>
+        <h1>Miikwasouski Chamber of Commerce</h1>
+    </footer>
 </body>
 </html>

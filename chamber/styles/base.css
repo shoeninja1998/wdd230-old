@@ -7,9 +7,9 @@ ul li, label, nav a, .card, #darkmode{
     --headerBG: rgb(130, 255, 200);
     --navBG: rgb(70, 70, 70);
     --mainBG: rgb(150, 150, 250);
-}
-
-button{
+    --cardBG: rgb(240, 240, 240);
+    --footerBG: black;
+    --darkHeaderBG: rgb()
 
 }
 
@@ -20,14 +20,19 @@ header{
     display:flex;
 }
 
-header h1, footer h1, h1{
-    margin: 2rem;
+#headerInfo{
+    display: flex;
+    align-items: center;
+}
+
+header h1, footer h1{
+    margin: 2rem 2rem 2rem 1rem;
     text-align: left;
 }
 
 header img{
-    width: 2rem;
-    height: 2rem;
+    margin: 1rem;
+    max-width: 8rem;
 }
 
 /* Nav */
@@ -46,43 +51,18 @@ nav a{
 }
 
 #active, nav a:hover{
-    background-color: lightgray;
-    color: black;
+    background-color: var(--cardBG);
+    color: var(--footerBG);
 }
 
-#darkmode{
-    background-color: black;
+#darkmode, .inactive{
+    background-color: var(--footerBG);
     color: white;
     border: none;
 }
 
-#darkmode:hover{
-    background-color: var(--navBG);
-}
-
-/* Hero image */
-
-#hero{
-    width:100%;
-    height: 10rem;
-
-}
-
-h1{
-    text-align: center;
-}
-
-/* Card */
-.card{
-    border: 1px solid grey;
-    background-color: lightgray;
-    padding: 1rem;
-    margin: 2rem;
-    
-}
-
-.card h2{
-    border-bottom: 1px solid black;
+#darkmode:hover .inactive:hover, .active{
+    background-color: white;
 }
 
 /* Footer */
@@ -91,6 +71,44 @@ footer{
     background-color: black;
     color: white;
     padding: 3rem;
+}
+
+
+/* Home Page */
+
+#home-main{
+    max-width: 80%;
+    margin: auto;
+    background-color: var(--mainBG);
+}
+
+.hero img{
+    width:100%;
+    height: auto;
+}
+
+.hero a{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+}
+
+.card{
+    border: 1px solid grey;
+    background-color: var(--cardBG);
+    padding: 1rem;
+    margin: 2rem;
+    
+}
+
+.card h2{
+    border-bottom: 1px solid black;
 }
 
 /* Discover Page */
@@ -116,36 +134,22 @@ footer{
     margin: auto;
     background-color: var(--mainBG);
 }
-#displayButtons{
-    display: flex;
-    justify-content: center;
-}
-
-#displayButtons button{
-    border: 0.2rem solid black;
-    margin:1rem;
-    line-height: 4rem;
-    font-size: 100%;
-}
-
-.inactive{
-    background-color: var(--navBG);
-    color: white;
-}
 
 /* Join Page */
 
 #join-form, #benefits{
-    margin: 1rem;
+    margin: 2rem;
+    padding: 2rem;
+    background-color: var(--cardBG);
 } 
 
 #input-text input, textarea{
     width: 20rem;
 }
 
-#join-main fieldset{
+#join-main{
     padding: 1rem;
-    height:50rem;
+    height:100%;
     background-color: var(--mainBG);
 }
 
@@ -168,49 +172,68 @@ footer{
 
 /* Directory Page */
 
-.menu {
-	margin: 1rem auto;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	padding: 0.5rem;
-	background-color: #bed;
-	text-align: center;
+#members{
+    display:flex;
+}
+.directoryCard{
+    flex:1;
+    box-sizing: border-box;
 }
 
-.menu button {
-	padding: 1rem;
-	font-weight: 700;
+.directoryCard a {
+	font-family: "Roboto", Arial, sans-serif;
+	color: navy;
 }
 
-.grid section {
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	padding: 0.5rem;
-	background-color: lightgrey;
+#displayButtons{
+    display: flex;
+    justify-content: center;
+    background-color: var(--mainBG);
+}
+
+#displayButtons button{
+    border: 0.2rem solid black;
+    margin:1rem;
+    line-height: 3rem;
+    font-size: 100%;
+    width: 5rem;
+}
+
+
+/* GRID */
+.grid section{
+	border: 3px solid black;
+    text-align: center;
+}
+
+.grid section:nth-child(even){
+    background-color: var(--headerBG);
+}
+
+.grid section:nth-child(odd){
+    background-color: lightgrey;
 }
 
 .grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	grid-gap: 5px;
+	grid-gap: 10px;
 	align-items: center;
 }
 
-.grid section {
-	text-align: center;
+.directoryCardText{
+    padding: 0 1rem 1rem 1rem;
 }
 
 .grid img {
-	border: 1px solid #fff;
-	box-shadow: 0 0 10px #333;
+	max-width: 100%;
 }
 
-.grid section > * {
-	margin: 0.1rem;
+#members.grid{
+    padding: 1rem;
 }
 
-.grid h3 {
-	font-family: "Caveat", cursive;
-}
-
+/* LIST */
 .list {
 	display: flex;
 	flex-direction: column;
@@ -240,17 +263,6 @@ footer{
 	background-color: var(--headerBG);
 }
 
-.directoryCard a {
-	font-family: "Roboto", Arial, sans-serif;
-	font-size: 0.85rem;
-	color: navy;
-	letter-spacing: 1.1pt;
-}
-
-.grid img {
-	height: 75px;
-	max-width: 100%;
-}
 
 
 @media (min-width: 60rem){

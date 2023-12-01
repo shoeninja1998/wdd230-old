@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Join - MSCC</title>
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <script src="scripts/form.js" defer></script>
     <script src="scripts/darkmode.js" defer></script>
 </head>
 
 <body>
     <header>
-        <img src="images/chamber_of_commerce_logo.webp" alt="logo">
-        <h1>Miikwasouski Chamber of Commerce</h1>
+        <div id="headerInfo">
+            <img src="images/chamber_of_commerce_logo.webp" alt="logo">
+            <h1>Miikwasouski Chamber of Commerce</h1>
+        </div>
         <nav>
             <a href="index.html">Home</a>
             <a href="discover.html">Discover</a>
@@ -24,7 +27,6 @@
     <main id="join-main">
         <section id="join-form">
             <form>
-            <fieldset>
                 <section id="input-text">
                     <label class="myinput">First Name*<br><input name="fname" type="text" required></label>
                     <label class="myinput">Last Name*<br><input name="lname" type="text" required></label>
@@ -44,12 +46,10 @@
                     <label id="timestamp" type="hidden" name="timestamp" value=""></label>
                     <button type="submit" onclick="">Join The MSCC!</button>
                 </section>
-            </fieldset>
             </form>
         </section>
 
         <section id="benefits">
-        <fieldset>
             <h1>Membership Levels Benefits</h1>
             <h2>Non-Profit Membership</h2>
                 <ul>
@@ -77,8 +77,10 @@
                     <li>1 free training per quarter</li>
                     <li>Fee of $250/month</li>
                 </ul>
-        </fieldset>
         </section>
     </main>
+    <footer>
+        <h1>Miikwasouski Chamber of Commerce</h1>
+    </footer>
 </body>
 </html>
