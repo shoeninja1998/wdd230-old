@@ -6,8 +6,7 @@ function displayMembers(members){
         // Iterates through each member in JSON list
         members.forEach((member) =>{
             let section = document.createElement('section')
-            // section.classList.add('directoryCard');
-            
+            section.classList.add('directoryCard');
             // Card HTML format
             let sectionHTML = `
             <img src="${member.imageFile}" alt="${member.name}"></img>

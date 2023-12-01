@@ -9,6 +9,10 @@ ul li, label, nav a, .card, #darkmode{
     --mainBG: rgb(150, 150, 250);
 }
 
+button{
+
+}
+
 /* Header */
 header{
     background-color: var(--headerBG);
@@ -233,19 +237,10 @@ footer{
 }
 
 .list section:nth-child(even) {
-	background-color: #bed;
+	background-color: var(--headerBG);
 }
 
-section h3 {
-	font-size: 1.5rem;
-}
-
-section p {
-	font-weight: 600;
-	font-size: smaller;
-}
-
-section a {
+.directoryCard a {
 	font-family: "Roboto", Arial, sans-serif;
 	font-size: 0.85rem;
 	color: navy;
@@ -254,7 +249,7 @@ section a {
 
 .grid img {
 	height: 75px;
-	max-width: 100%; /* Images are jerks - Seattle*/
+	max-width: 100%;
 }
 
 
