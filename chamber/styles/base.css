@@ -135,6 +135,10 @@ h1{
     background-color: var(--mainBG);
 }
 
+#discover-main .card li{
+    line-height: 2rem;
+}
+
 /* Join Page */
 
 #join-form, #benefits{

@@ -1,0 +1,40 @@
+:root{
+    --primaryColor: rgb(255, 180, 70);
+    --secondaryColor: ;
+
+}
+body{
+    font-size: 1.5rem;
+}
+#active{
+    font-size: 2rem;
+    background-color: var(--primaryColor);
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+}
+.navigation li{
+	display: none;
+    margin: 1.5em;
+}
+.navigation a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show{
+    display: flex;
+}
+#menu.show::before {
+    content: "X";
+}
+#menu::before {
+    content: "≡";
+}

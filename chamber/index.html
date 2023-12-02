@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="icon" href="images/chamber_of_commerce_logo.webp">
-    <script src="scripts/windchill.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     <script src="scripts/darkmode.js" defer></script>
     <script src="scripts/spotlight.js" defer></script>
 </head>
@@ -36,7 +36,7 @@
     </header>
     <main id="home-main">
         <img class="hero" src="images/kansas-city-missouri-temple.webp">
-        <!-- <a href="join.html">Join the MSCC!</a> -->
+        <a href="join.html">Join the MSCC!</a>
     
 
         <section class="card">
@@ -44,7 +44,7 @@
 
         </section>
 
-        <section class="card">
+        <section id="weather" class="card">
             <h2>Weather</h2>
             <p>Temperature: <span id="temperature"></span>°F</p>
             <p>Wind Speed: <span id="wind-speed"></span>m/s</p>
