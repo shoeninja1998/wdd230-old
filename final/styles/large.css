@@ -1,0 +1,39 @@
+@media only screen and (min-width: 1100px){
+    /* Footer */
+        footer{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+ /* Home page  */
+    #homeMain{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    #forecastWeather div{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+/* Order Drink Page */
+    #orderForm{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    #orderForm{
+        text-align: left;
+    }
+
+/* About Us Page */
+    #aboutMain img{
+        width: 800px;
+    }
+
+    #aboutMain iframe{
+        width: 1000px;
+}
+
+}

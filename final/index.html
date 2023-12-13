@@ -3,41 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bradley Rennick">
+    <meta name="description" content="WDD 230 - Bountiful Foods Final Project">
+
+    <meta property="og:url"                content="https://github.com/shoeninja1998/wdd230/blob/main/final/index.html">
+    <meta property="og:type"               content="website">
+    <meta property="og:title"              content="Brad Rennick - WDD 230 - Final Project">
+    <meta property="og:description"        content="Brad Rennick's Bountiful Foods Website">
+    <meta property="og:image"              content="images/bountifulfoods">
+    
     <title>Bountiful Foods</title>
+    <link rel="icon" href="images/bountifulfoods.webp">
     
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/normalize.css">
 
-    <script src="scripts/hamburgerMenu.js" defer></script>
+    <script src="scripts/common.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+
 </head>
 <body>
     <header>
         <h1>Bountiful Foods</h1>
     </header>
     <nav>
-        <a id="menu">Menu</a>
-        <ul class="navigation">
-            <li>
-                <a id="active" href="">Home</a>
-            </li>
-            <li>
+        <a id="menu"></a>
+        <section class="navigation">
+                <a id="active">Home</a>
                 <a href="orderDrink.html">Order Drink</a>
-            </li>
-            <li>
                 <a href="aboutUs.html">About Us</a>
-            </li>
-        </ul>
-        
+        </section>
     </nav>
-    <main>
-        <a href="orderDrink.html">Order a Drink!</a>
-        <!-- Weather summary for Carlsbad -->
-        <section id="weather" class="card">
-
+    <img id="hero" src="images/hero.webp" alt="Carlsbad Shore">
+    <main id="homeMain">
+        <section id="drinks">
+            <h2>Drinks</h2>
+            <div class="card">
+                <p>You've ordered <span id="drinkTotal"></span> drinks in the past!</p>
+                <p>Each handmade drink is meticulously prepared to tantalize your taste buds and 
+                    refresh your senses. Our diverse selection of fruits is a symphony of flavors, 
+                    blending premium ingredients to create a harmonious fusion of taste and quality.</p>
+                <a class="orderButton" href="orderDrink.html">Order a Drink!</a>
+            </div>
         </section>
-        <section id="information" class="card">
-
-        </section>
-    </main>
-</body>
+            <section id="weather">
+                <h2>Carlsbad Weather</h2>
+                <div class="card">
+                    <h3 id="tempText"></h3>
+                    <img src="https://openweathermap.org/img/wn/13d.png" alt="Weather" id="tempImage">
+                    <h3>Temp: <span id="temperature"></span>ºF</h3>
+                    <h3>Humid: <span id="humidity"></span>%</h3>
+                </div>
+                <section id="forecastWeather"></section>
+            </section>
+            <section id="information">
+                <h2>Information</h2>
+                <div class="card">
+                    <p>Nestled along the sun-kissed coastline of Southern California, Carlsbad is a city that seamlessly blends natural beauty with technological innovation. Established in the late 19th century as a destination for its mineral spring waters, Carlsbad has evolved into a thriving community known for its picturesque beaches, family-friendly atmosphere, and a vibrant economy.</p>
+                    <p>With its blend of coastal tranquility and technological vitality, Carlsbad continues to attract a diverse and dynamic population. Whether strolling along the shore, exploring innovation centers, or enjoying community events, residents and visitors find a welcoming and enriching experience in this Californian gem.</p>
+                    <a class="orderButton" href="aboutUs.html">Learn more!</a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section>
+                <h3>Resources Used</h3>
+                <a href="fruityvice.com">Fruityvice</a><br>
+                <a href="openewathermap.org">OpenWeatherMap</a>
+            </section>
+            <section>
+                <h3>Social Medias</h3>
+                <a href="facebook.com">Facebook</a><br>
+                <a href="twitter.com">Twitter</a><br>
+                <a href="youtube.com">Youtube</a>
+            </section>
+            <section>
+                <h3>Contact Us</h3>
+                <p>Phone: 1+(760) 812-4215 </p>
+                <p>Email: bountifulfoods@carlsbad.org</p>
+                <p>123 Ocean View Avenue Carlsbad, CA, 92008</p>
+            </section>
+            <p id="modifiedLine">Last Modified: <span id="lastModified"></span></p>
+        </footer>
+    </body>
 </html>
+

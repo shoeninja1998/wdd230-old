@@ -8,3 +8,7 @@ hambutton.addEventListener('click', () => {
 	hambutton.classList.toggle('show');
 	nav.classList.toggle('show');
 });
+
+lastModified = document.lastModified;
+lastModifiedElement = document.getElementById('lastModified');
+lastModifiedElement.textContent = lastModified;
