@@ -21,10 +21,13 @@ main{
     margin: 0 auto 100px auto;
 }
 
-header h1{
+header{
+    display: flex;
+    justify-content: center;
     background-color: var(--primaryColor);
     margin: 0;
-    padding: 50px
+    padding: 20px;
+    font-size: 3rem;
 }
 
 /* Navigation */
@@ -43,6 +46,9 @@ nav{
 
 .navigation a, #active{
     text-decoration: none;
+    padding: 1rem;
+    font-size: 2rem;
+    color: black;
     justify-content: center;
     text-align: center;
 }
@@ -84,6 +90,14 @@ footer{
     background-color: var(--footerColor);
     color: white;
     padding: 100px;
+}
+
+.social{
+    display: block;
+    padding: 1rem;
+    margin: 0 1rem;
+    background-color: var(--primaryColor);
+    color: black;
 }
 
 #modifiedLine{
@@ -141,8 +155,9 @@ footer{
 }
 
 #orderForm .myinput input{
-    line-height: 2rem;
+    line-height: 3rem;
     width: 200px;
+    margin: auto;
 }
 
 #submitOrder{
@@ -167,16 +182,14 @@ footer{
     margin-bottom: 1rem;
 }
 
-.social{
-    padding: 1rem;
-    margin: 1rem;
-    text-decoration: none;
-    background-color: #AAA259;
-}
-
 /* About Us Page */
 
 #map{
     background-color: var(--primaryColor);
     padding: 2rem;
+}
+
+#aboutMain{
+    width: 80%;
+    margin: 2rem auto;
 }

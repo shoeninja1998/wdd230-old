@@ -23,22 +23,17 @@
     
     /* Order Drink Page */
     
-    #orderForm .myinput{
-        line-height: 2rem;
+    #orderForm .myinput input{
         width: 300px;
     }
 
     /* About Us Page */
-    
-    #aboutMain{
-        width: 60%;
-    }
 
     #aboutMain img{
         width: 500px;
     }
 
     #aboutMain iframe{
-        width: 800px;
+        width: 500px;
     }
 }
